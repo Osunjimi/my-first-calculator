@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="screen" id="screen">
+                <input type="text" id="display">
+            </div>
+            <div class="button-div">
+                <button class="action" onclick="clearScreen()">AC</button>
+                <button class="action" onclick="backSpace()">DEL</button>
+                <button class="operation" onclick="numbers('%')">%</button>
+                <button class="operation" onclick="numbers('/')">/</button>
+                <button class="numbers" onclick="numbers('9')">9</button>
+                <button class="numbers" onclick="numbers('8')">8</button>
+                <button class="numbers" onclick="numbers('7')">7</button>
+                <button class="operation" onclick="numbers('*')">X</button>
+                <button class="numbers" onclick="numbers('6')">6</button>
+                <button class="numbers" onclick="numbers('5')">5</button>
+                <button class="numbers" onclick="numbers('4')">4</button>
+                <button class="operation" onclick="numbers('-')">-</button>
+                <button class="numbers" onclick="numbers('3')">3</button>
+                <button class="numbers" onclick="numbers('2')">2</button>
+                <button class="numbers" onclick="numbers('1')">1</button>
+                <button class="operation" onclick="numbers('+')">+</button>
+                <button class="numbers zero" onclick="numbers('0')">0</button>
+                <button class="numbers" onclick="numbers('.')">.</button>
+                <button class="numbers" onclick="equals()">=</button>
+            </div>
+        </div>
+        <p class="intro">Developed by @Osunjimi Ibrahim</p>
+    </div>
+    <script src="./index.js"></script>
+    <!-- <script>
+        const numbers = (value) =>{
+           let display = document.getElementById("display");
+            display.value += value;
+        }
+        const equals = () =>{
+           let display = document.getElementById("display");
+            display.value = eval(display.value);
+        }
+        const clearScreen = () =>{
+            display.value = ''
+        }
+        const backSpace = () => {
+           let display = document.getElementById("display");
+            display.value = display.value.slice(0,-1)
+        }
+    </script> -->
+</body>
+</html>
